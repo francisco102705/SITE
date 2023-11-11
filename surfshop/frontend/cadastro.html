@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mahalo | Loja de surf</title>
+        <link rel="stylesheet" href="./static/css/reset.css" />
+        <link rel="stylesheet" href="./static/css/style.css" />
+        <link rel="stylesheet" href="./static/css/icons.css" />
+        <link rel="stylesheet" href="./static/css/utilities.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            .container {
+                display: flex;
+                justify-content: space-around;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 100ch;
+                margin: auto;
+                margin-top: 1rem;
+            }
+
+            .form-container {
+                padding: 20px;
+                text-align: center;
+            }
+
+            h2 {
+                color: #333;
+            }
+
+            form {
+                max-width: 300px;
+                margin-top: 0.75rem;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: #555;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+            button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page">
+            <header>
+                <section>
+                    <img src="./static/imgs/logo.png" width="150px" />
+                </section>
+                <section class="header-right">
+                    <nav>
+                        <ul>
+                            <li><a href="/frontend/index.html">Home</a></li>
+                            <li><a href="/frontend/sobre.html">Sobre</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Dúvidas</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                    <i class="gg-shopping-cart"></i>
+                    <a href="/frontend/cadastro.html">
+                        <i class="gg-user"></i>
+                    </a>
+                </section>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="form-container">
+                        <h2>Cadastre-se</h2>
+                        <form class="registration-form">
+                            <label for="username">Username</label>
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                required
+                            />
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                            <label for="senha">Senha</label>
+                            <input
+                                type="password"
+                                id="senha"
+                                name="senha"
+                                required
+                            />
+                            <p id="cadastrar-error"></p>
+                            <button type="submit" id="btn-cadastrar">
+                                Cadastre-se
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="form-container">
+                        <h2>Entre</h2>
+                        <form class="sign-in-form">
+                            <label for="entreEmail">Email</label>
+                            <input
+                                type="email"
+                                id="entreEmail"
+                                name="entreEmail"
+                                required
+                            />
+                            <label for="entreSenha">Senha</label>
+                            <input
+                                type="password"
+                                id="entreSenha"
+                                name="entreSenha"
+                                required
+                            />
+                            <p id="entrar-error"></p>
+                            <button type="submit" id="btn-entrar">Entre</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <section>
+                    <h2>Institucional</h2>
+                    <ul>
+                        <li><a href="/frontend/index.html">Home</a></li>
+                        <li><a href="/frontend/sobre.html">Sobre</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Guia de pranchas</a></li>
+                        <li><a href="#">Prazos e fretes</a></li>
+                        <li><a href="#">Trocas e devoluções</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Minha Conta</h2>
+                    <ul>
+                        <li><a href="#">Meus Dados</a></li>
+                        <li><a href="#">Meus Pedidos</a></li>
+                        <li><a href="#">Lista de Desejos</a></li>
+                        <li><a href="#">Carrinho</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Formas de Pagamento</h2>
+                    <img
+                        loading="lazy"
+                        src="./static/imgs/formas_de_pagamento.webp"
+                        alt="Formas de Pagamento"
+                        width="250px"
+                    />
+                    <h2 class="mt-5">Segurança</h2>
+                    <img
+                        loading="lazy"
+                        src="./static/imgs/certificado.webp"
+                        alt="Certificado de Segurança"
+                        width="200px"
+                    />
+                    <h2 class="mt-5">Redes Sociais</h2>
+                    <ul class="social-media-footer">
+                        <li><i class="gg-instagram"></i></li>
+                        <li><i class="gg-facebook"></i></li>
+                        <li><i class="gg-twitter"></i></li>
+                        <li><i class="gg-youtube"></i></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Newsletter</h2>
+                    <p>Receba dicas, novidades e promoções</p>
+                    <form action="#" class="mt-5">
+                        <input
+                            type="text"
+                            name="newsletter_nome"
+                            id="newsletter_nome"
+                            placeholder="Nome"
+                        />
+                        <div>
+                            <input
+                                type="text"
+                                name="newsletter_email"
+                                id="newsletter_email"
+                                placeholder="E-mail"
+                            />
+                            <button type="submit">Ok</button>
+                        </div>
+                    </form>
+                </section>
+            </footer>
+            <section class="extra-footer | text-center">
+                <p>
+                    &copy
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    Mahalo LTDA. Todos os direitos reservados.
+                </p>
+                <p>CNPJ: 00.000.000/0001-00</p>
+            </section>
+        </div>
+    </body>
+
+    <script src="./static/js/index.js"></script>
+</html>

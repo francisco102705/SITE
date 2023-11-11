@@ -1,0 +1,193 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: bold;
+}
+
+.page {
+    padding-inline: 3rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 3rem;
+}
+
+.search-area {
+    position: relative;
+    width: fit-content;
+}
+
+.search-area > input {
+    line-height: 2rem;
+}
+
+.gg-search {
+    position: absolute !important;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-right > nav > ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.extra-footer,
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+}
+
+.extra-footer {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    opacity: 0.6;
+}
+
+.social-media-footer {
+    display: flex;
+    gap: 1.125rem;
+    align-items: center;
+}
+
+footer form {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.main-home {
+    margin-top: 3rem;
+    overflow-x: auto;
+    padding: 1rem;
+
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    min-width: 300px;
+
+    display: grid;
+    gap: 1.125rem;
+    justify-items: center;
+}
+
+.card img {
+    height: 400px;
+}
+
+.card h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card span {
+    font-weight: 700;
+}
+
+.button-buy {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+        rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+        Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s, box-shadow 0.08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+.button-buy:disabled {
+    cursor: default;
+}
+
+.button-buy:focus {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+        rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+        rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 8rem;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../imgs/hero.jpg);
+
+    height: 100dvh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero p {
+    font-size: 2.75rem;
+}
+
+.main-about {
+    max-width: 100ch;
+    margin: 0 auto;
+    padding: 20px;
+}
